@@ -13,6 +13,25 @@ $(document).ready(function(){
 		$('#sec').text(sec);
 		$('#ms').text(ms);
 
-	}, 1);
 
+	
+	    if (min % 2 === 0) {
+	        $('#min').css('color', 'red');
+	    } else {
+	        $('#min').css('color', 'white');
+		}
+	});
+	var colors = ["#CCCCCC","#333333","#990099"];  
+
+	window.setInterval(function(){
+
+		var rand = Math.floor(Math.random()*colors.length);           
+		$('body').css({"background-color": colors[rand]});
+
+	}, 300000);
+
+	window.setInterval(function(){
+		var rand = Math.floor(Math.random()*colors.length);           
+		$('h1').css({"color": colors[rand]});	
+	}, 3600000);
 });
