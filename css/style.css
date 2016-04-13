@@ -8,6 +8,7 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	width: 30%;
+	min-width: 350px;
 	font-family: "Courier New", Courier;
 }
 
